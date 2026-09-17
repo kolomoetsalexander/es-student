@@ -3,6 +3,7 @@
 #include "hardware/gpio.h"
 #include "led.h"
 #include "log.h"
+#include "device.h"
 const uint BUTTON_PIN = 15;
 const uint DEBOUNCE_MS = 20;
 bool get_button_debounce(uint pin)
@@ -22,7 +23,7 @@ void handle_command(int command){
 	}
         else if (command == 'v'){        
 		log_version();
-		printf("led %s\n", led_is_on() ? "on" : "off");
+		LOG_INF("led %s\n", led_is_on() ? "on" : "off");
         }
 	else{
 		LOG_ERR("unknown command: %c\n", command);
