@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include "pico/stdlib.h"
+#include "hardware/regs/addressmap.h"
+#include "hardware/regs/sio.h"
+#include "pico/stdlib.h"
+#include "hardware/gpio.h"
+const uint LED_PIN = 25;
+const uint BUTTON_PIN = 15;
+int main()
+{
+	stdio_init_all();
+	gpio_pull_up(BUTTON_PIN);
+	gpio_init(LED_PIN);
+	gpio_set_dir(LED_PIN, GPIO_OUT);
+	volatile uint32_t *gpio_out_set = (uint32_t *)(SIO_BASE + SIO_GPIO_OUT_SET_OFFSET);
+        volatile uint32_t *gpio_out_clr = (uint32_t *)(SIO_BASE + SIO_GPIO_OUT_CLR_OFFSET);
+        const uint32_t led_mask = 1u << LED_PIN;
+	bool led = false;
+	bool previous = false;
+	while(1)
+	{
+		printf("Hello, world!\n");
+		sleep_ms(1000);
+		bool current = gpio_get(BUTTON_PIN);
+		if (previous == true && current == false)
+		{
+			led = !led;
+		}
+		previous = current;
+		*gpio_out_set = led_mask;
+		sleep_ms(250);
+		*gpio_out_clr = led_mask;
+		sleep_ms(1000);
+	}
+}
+
