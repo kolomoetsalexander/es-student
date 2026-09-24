@@ -35,6 +35,8 @@ void handle_command(int command){
 }
 int main()
 {
+
+	
 	stdio_init_all();
 	gpio_init(BUTTON_PIN);
 	gpio_set_dir(BUTTON_PIN, GPIO_IN);
