@@ -1,0 +1,20 @@
+задание: 1.3.6
+проект: 134-led-module
+устройство: 2e8a:000a
+серийный номер: E66098F29B4B7739
+порт: /dev/ttyACM0
+начало: 2026-09-24T17:52:30
+   0.000 --> v
+   0.333 <-- dbg main:57 got v
+   0.333 <-- device: es-led-module 1.0.0, built Sep 24 2026 17:50:42, log level 3
+   0.334 <-- inf handle_command:26 led off
+   1.335 --> e
+   1.603 <-- dbg main:57 got e
+   1.603 <-- inf handle_command:18 led on
+   2.604 --> d
+   2.874 <-- dbg main:57 got d
+   2.874 <-- inf handle_command:22 led off
+   3.876 --> q
+   4.144 <-- dbg main:57 got q
+   4.144 <-- err handle_command:29 unknown command: q
+итог: отправлено команд 4

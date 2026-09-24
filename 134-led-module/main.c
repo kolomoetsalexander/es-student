@@ -21,16 +21,21 @@ void handle_command(int command){
 		led_set(false);
        		LOG_INF("led %s\n", led_is_on() ? "on" : "off");
 	}
-        else if (command == 'v'){        
+    else if (command == 'v'){        
 		log_version();
-		LOG_INF("led %s\n", led_is_on() ? "on" : "off");
+			LOG_INF("led %s\n", led_is_on() ? "on" : "off");
         }
+	else if (command == 'i')
+    {
+        device_info();
+    }
 	else{
 		LOG_ERR("unknown command: %c\n", command);
 	}
 }
 int main()
 {
+	stdio_init_all();
 	gpio_init(BUTTON_PIN);
 	gpio_set_dir(BUTTON_PIN, GPIO_IN);
 	gpio_pull_up(BUTTON_PIN);

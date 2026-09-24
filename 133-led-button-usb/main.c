@@ -32,6 +32,7 @@ bool handle_command(int command, bool led){
 }
 int main()
 {
+	stdio_init_all();
 	gpio_init(BUTTON_PIN);
 	gpio_set_dir(BUTTON_PIN, GPIO_IN);
 	gpio_pull_up(BUTTON_PIN);
