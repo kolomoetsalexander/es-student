@@ -30,7 +30,7 @@
    1.683 <-- name: es-adc
    1.684 <-- version: 1.0.0
    1.684 <-- project: 311-adc
-   1.684 <-- repo: https://github.com/LLeska/es-student
+   1.684 <-- repo: https://github.com/kolomoetsalexander/es-student
    1.684 <-- board: pico
    1.685 <-- serial: E66098F29B4B8932
    1.686 <-- chip: manufacturer 0x927, part 0x0002, revision 1

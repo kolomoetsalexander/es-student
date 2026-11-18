@@ -24,7 +24,7 @@
    1.558 <-- name: es-firmware
    1.558 <-- version: 1.0.0
    1.558 <-- project: 231-firmware-template
-   1.558 <-- repo: https://github.com/L3V666/es-student
+   1.558 <-- repo: https://github.com/kolomoetsalexander/es-student
    1.558 <-- board: pico
    1.558 <-- serial: 5303284718A63B9C
    1.558 <-- chip: manufacturer 0x927, part 0x0002, revision 2

@@ -43,7 +43,7 @@
    1.637 <-- name: es-recorder
    1.638 <-- version: 1.0.0
    1.638 <-- project: 321-audio-recorder
-   1.639 <-- repo: https://github.com/LLeska/es-student
+   1.639 <-- repo: https://github.com/kolomoetsalexander/es-student
    1.639 <-- board: pico
    1.639 <-- serial: E66098F29B4B8932
    1.639 <-- chip: manufacturer 0x927, part 0x0002, revision 1
@@ -62,7 +62,7 @@
    5.705 <-- name: es-recorder
    5.706 <-- version: 1.0.0
    5.709 <-- project: 321-audio-recorder
-   5.711 <-- repo: https://github.com/LLeska/es-student
+   5.711 <-- repo: https://github.com/kolomoetsalexander/es-student
    5.713 <-- board: pico
    5.715 <-- serial: E66098F29B4B8932
    5.717 <-- chip: manufacturer 0x927, part 0x0002, revision 1

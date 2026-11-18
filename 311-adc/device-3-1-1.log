@@ -30,7 +30,7 @@
    1.618 <-- name: es-adc
    1.619 <-- version: 1.0.0
    1.619 <-- project: 311-adc
-   1.619 <-- repo: https://github.com/LLeska/es-student
+   1.619 <-- repo: https://github.com/kolomoetsalexander/es-student
    1.620 <-- board: pico
    1.620 <-- serial: E66098F29B4B8932
    1.620 <-- chip: manufacturer 0x927, part 0x0002, revision 1
