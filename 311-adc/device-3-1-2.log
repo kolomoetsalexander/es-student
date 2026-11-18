@@ -3,28 +3,49 @@
 устройство: 2e8a:000a
 серийный номер: E66098F29B4B8932
 порт: COM10
+примечание: обмен help перенесён из device-3-1-1.log той же платы. Время строк начиная с info сдвинуто на 1 с.
 начало: 2026-11-05T15:45:14
    0.000 --> 
-   0.553 --> info
-   0.615 <-- info
-   0.616 <-- name: es-adc
-   0.616 <-- version: 1.0.0
-   0.616 <-- project: 311-adc
-   0.617 <-- repo: https://github.com/kolomoetsalexander/es-student
-   0.617 <-- board: pico
-   0.617 <-- serial: E66098F29B4B8932
-   0.617 <-- chip: manufacturer 0x927, part 0x0002, revision 1
-   0.617 <-- pico-sdk: 2.3.0
-   1.615 --> get_temp
-   1.677 <-- get_temp
-   1.680 <-- temp: 21.5 C
-   2.617 --> get_temp
+   0.554 --> help
+   0.555 <-- help
+   0.555 <-- help             list of commands
+   0.555 <-- get_voltage      voltage on GP26
+   0.556 <-- get_temp         chip temperature
+   0.556 <-- tm_start         start telemetry: tm_start [<period_ms>]
+   0.556 <-- tm_stop          stop telemetry
+   0.556 <-- charge_on        charge RC circuit on GP22
+   0.557 <-- charge_off       discharge RC circuit
+   0.557 <-- info             device passport
+   0.557 <-- uptime           time since reset
+   0.558 <-- led_enable       turn LED on
+   0.558 <-- led_disable      turn LED off
+   0.558 <-- led_blink        blink LED
+   0.558 <-- led_period       set blink period: led_period <period_ms>
+   0.616 <-- button           button state and press count
+   0.617 <-- pi_start         start pi calculation: pi_start [<terms>]
+   0.617 <-- pi               pi calculation state and result
+   0.617 <-- profiling        stopwatch results
+   0.618 <-- profiling_reset  reset stopwatch results
+   1.553 --> info
+   1.615 <-- info
+   1.616 <-- name: es-adc
+   1.616 <-- version: 1.0.0
+   1.616 <-- project: 311-adc
+   1.617 <-- repo: https://github.com/kolomoetsalexander/es-student
+   1.617 <-- board: pico
+   1.617 <-- serial: E66098F29B4B8932
+   1.617 <-- chip: manufacturer 0x927, part 0x0002, revision 1
+   1.617 <-- pico-sdk: 2.3.0
+   2.615 --> get_temp
    2.677 <-- get_temp
-   2.678 <-- temp: 21.1 C
-   3.678 --> get_temp
-   3.740 <-- get_temp
-   3.741 <-- temp: 21.5 C
-   4.682 --> get_voltage
-   4.745 <-- get_voltage
-   4.745 <-- voltage: 0.594 V
-итог: отправлено кадров 6, принято строк 17
+   2.680 <-- temp: 21.5 C
+   3.617 --> get_temp
+   3.677 <-- get_temp
+   3.678 <-- temp: 21.1 C
+   4.678 --> get_temp
+   4.740 <-- get_temp
+   4.741 <-- temp: 21.5 C
+   5.682 --> get_voltage
+   5.745 <-- get_voltage
+   5.745 <-- voltage: 0.594 V
+итог: отправлено кадров 7, принято строк 36
